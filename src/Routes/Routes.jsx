@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Root from "../Pages/Root/Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Apps from "../Pages/Apps/Apps";
+import Installed from "../Pages/Installed/Installed";
 
 export const router = createBrowserRouter([
 	{
@@ -12,6 +13,7 @@ export const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <Home /> },
 			{ path: "/apps", element: <Apps /> },
+			{ path: "/installed", element: <Installed /> },
 			{ path: "*", element: <ErrorPage /> },
 		],
 	},
